@@ -5,13 +5,15 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     marginTop: Metrics.navBarHeight,
-    backgroundColor: Colors.background
+    backgroundColor: Colors.background,
+    padding: 10,
   },
   row: {
     flex: 1,
     backgroundColor: Colors.fire,
     marginVertical: Metrics.smallMargin,
-    justifyContent: 'center'
+    justifyContent: 'center',
+    borderColor: '#eee',
   },
   boldLabel: {
     fontWeight: 'bold',

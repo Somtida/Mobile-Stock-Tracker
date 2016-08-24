@@ -11,7 +11,10 @@ export default StyleSheet.create({
     height: 40,
     borderColor: 'gray',
     borderWidth: 1,
-    color: '#fff'
+    color: '#000',
+    padding: 10,
+    margin: 10,
+    backgroundColor: '#fff',
   },
   letter: {
     color: '#fff'
@@ -20,10 +23,11 @@ export default StyleSheet.create({
     alignItems: 'center',
     height: 40,
     marginTop: 10,
-    borderColor: '#000',
+    borderColor: '#eee',
     borderRadius: 10,
     borderWidth: 1,
     backgroundColor: 'orange',
+    margin: 10,
   },
   submitText: {
     fontSize: 20,

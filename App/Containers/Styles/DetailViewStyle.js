@@ -10,7 +10,7 @@ export default StyleSheet.create({
   },
   item: {
     flex: 1,
-    borderColor: 'black',
+    borderColor: '#eee',
     borderWidth: 1
   },
   text: {
