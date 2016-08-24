@@ -26,7 +26,7 @@ class SearchMenu extends React.Component {
     const { lookupRequest } = this.props
     const { input } = this.state
     lookupRequest(input)
-    console.log('1. submit request');
+    console.log('submit request');
     this.setState({ input: '' })
   }
 

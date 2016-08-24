@@ -41,14 +41,21 @@ class LookupResults extends React.Component {
     )
   }
 
+  _noRowData () {
+  return this.state.dataSource.getRowCount() === 0
+}
+
   render () {
     console.log('this.state.dataSource:',this.state.dataSource);
     return (
       <View style={styles.container}>
-        <ListView
-          dataSource={this.state.dataSource}
-          renderRow={this._renderRow}
-          />
+        {this._noRowData()
+          ? <Text style={styles.emptyText}>No Results</Text>
+          : <ListView
+            dataSource={this.state.dataSource}
+            renderRow={this._renderRow}
+            />
+        }
       </View>
     )
   }
