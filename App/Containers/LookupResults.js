@@ -24,12 +24,9 @@ class LookupResults extends React.Component {
 
   _handlePress = (symbol) => {
     console.log('symbol:',symbol)
-
     const { quoteRequest } = this.props
     quoteRequest(symbol)
-    // NavigationActions.detailView()
-    // console.log('symbol result:', this.props.symbolResults);
-    console.log('this.props', this.props)
+    NavigationActions.detailView()
   }
 
   _renderRow = (rowData) => {
@@ -60,7 +57,6 @@ class LookupResults extends React.Component {
 const mapStateToProps = (state) => {
   return {
     results: state.lookup.results
-    // symbolResults: state.quote.results
   }
 }
 
