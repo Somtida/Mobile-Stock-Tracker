@@ -17,6 +17,7 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
   },
   letter: {
+    padding: 5,
     color: '#fff'
   },
   submitButton: {

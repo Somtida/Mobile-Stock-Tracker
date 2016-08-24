@@ -36,6 +36,7 @@ class SearchMenu extends React.Component {
     const { fetching } = this.props
     return (
       <View style={styles.container}>
+        <Text style={styles.letter}>Please Enter Symbol or Name of Business</Text>
         <TextInput
           style={styles.myinput}
           onChangeText={(input) => this.setState({input})}
